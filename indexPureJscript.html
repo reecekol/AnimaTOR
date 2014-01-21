@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html>
+ <head>
+   <title> </title>
+   <style>
+      #box {
+	    height:200px;
+		width:200px;
+		background-color:blue;
+	  }
+   </style>
+ </head>
+ 
+ <body>
+        <div id="box"> </div>
+		
+		<button>Move Me</button>
+ </body>
+ <script>
+    window.requestAnimationFrame = window.requestAnimationFrame || window.mozrequestAnimationFrame || 
+	window.webkitrequstAnimationFrame;
+	
+	  d=document.getElementById('box');
+	  
+	 function animator(step)
+	 {
+	   
+	  d.style.bgColor='red';
+	 }
+	 
+	 animator(1);
+  </script>
+</html>
